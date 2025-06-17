@@ -52,6 +52,8 @@ public class BootStrapData implements CommandLineRunner {
             Chain.setInv(25);
             Chain.setPrice(10.00);
             Chain.setId(1001);
+            Chain.setMinInv(1);
+            Chain.setMaxInv(50);
 
             inhousePartRepository.save(Chain);
 
@@ -63,6 +65,8 @@ public class BootStrapData implements CommandLineRunner {
             Handlebars.setInv(25);
             Handlebars.setPrice(35.00);
             Handlebars.setId(1002);
+            Handlebars.setMinInv(1);
+            Handlebars.setMaxInv(50);
 
             inhousePartRepository.save(Handlebars);
 
@@ -74,6 +78,8 @@ public class BootStrapData implements CommandLineRunner {
             Wheels.setInv(50);
             Wheels.setPrice(45.00);
             Wheels.setId(1003);
+            Wheels.setMinInv(1);
+            Wheels.setMaxInv(100);
 
             inhousePartRepository.save(Wheels);
         }
@@ -88,6 +94,8 @@ public class BootStrapData implements CommandLineRunner {
             Chassis.setInv(25);
             Chassis.setPrice(50.00);
             Chassis.setId(2001);
+            Chassis.setMinInv(1);
+            Chassis.setMaxInv(50);
 
             outsourcedPartRepository.save(Chassis);
 
@@ -100,6 +108,8 @@ public class BootStrapData implements CommandLineRunner {
             Tires.setInv(50);
             Tires.setPrice(50.00);
             Tires.setId(2002);
+            Tires.setMinInv(1);
+            Tires.setMaxInv(100);
 
             outsourcedPartRepository.save(Tires);
         }
