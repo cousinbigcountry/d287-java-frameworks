@@ -119,6 +119,39 @@ input[type=button]:hover {
 .product-form a {
     text-decoration: none;
 }
+.product-form ul {
+    width: fit-content;
+    list-style-type: none;
+    background: red;
+    color: white;
+}
+.product-form table {
+    width: 50%;
+    height: 100%;
+}
+.product-form table, th, td {
+    border: #5c3733 2px solid;
+}
+.product-form table td {
+    text-align: center;
+    color: #5c3733;
+    font-weight: bold;
+}
+.product-form table th {
+    text-align: center;
+    font-weight: bold;
+    color: #5c3733;
+    text-transform: uppercase;
+}
+.product-form>footer>a {
+    background-color: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+.product-form>footer>a:hover {
+    background-color: #FFFDD0;
+    color: #5c3733;
+}
 /* INHOUSE PART FORM */
 .inhouse-part-form {
     display: flex;
@@ -175,4 +208,50 @@ input[type=button]:hover {
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
+}
+/* SUCCESS FORM */
+.success-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success-form h2 {
+    color: white;
+    text-transform: uppercase;
+    background-color: green;
+}
+.success-form footer>a {
+    text-decoration: none;
+    border: #5c3733 2px solid;
+    background: #5c3733;
+    color: #FFFDD0;
+}
+.success-form footer>a:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+}
+/* Failure Form */
+.failure-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.failure-form h2 {
+    color: white;
+    text-transform: uppercase;
+    background-color: red;
+}
+.failure-form footer>a {
+    text-decoration: none;
+    border: #5c3733 2px solid;
+    background: #5c3733;
+    color: #FFFDD0;
+}
+.failure-form footer>a:hover {
+    background: #FFFDD0;
+    color: #5c3733;
 }
