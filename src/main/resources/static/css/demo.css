@@ -19,9 +19,23 @@ nav>.container {
     justify-content: center;
 
 }
+.nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5c3733;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.nav-item:hover {
+    opacity: 0.8;
+    color: #5c3733;
+}
 .navbar-brand {
     width: 5%;
     margin-left: 40%;
+}
+.navbar-brand:hover {
+    opacity: 0.8;
 }
 .container img {
    height: 300%;
@@ -109,4 +123,31 @@ input[type=button]:hover {
 .btn-to-mainscreen-inhouse:hover {
     background: #FFFDD0;
     color: #5c3733;
+}
+/* ABOUT SCREEN */
+.aboutscreen-template {
+    height: 100%;
+    width: 100%;
+}
+.aboutscreen-template>.container {
+    height: 50%;
+    width: 50%;
+}
+.aboutscreen-template>.container h1 {
+    color: #5c3733;
+    text-align: center;
+    margin-top: 3%;
+}
+.aboutscreen-template>.container img {
+    display: block;
+    margin: 2% auto;
+    align-self: center;
+    height: 75%;
+    width: 85%;
+}
+.aboutscreen-template>.container p {
+    color: #5c3733;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
 }
