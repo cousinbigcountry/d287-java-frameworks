@@ -1,41 +1,41 @@
 # D287 Project Code Changes
 ## Task C
-## mainscreen.html
+### mainscreen.html
 Lines: 13-14, 16-19, 22-29, 31, 
-## demo.css
+### demo.css
 Lines: 1-112
 
-## OutSourcedpartForm.html
+### OutSourcedpartForm.html
 Lines: 8-9, 11, 31
 
-## productForm.html
+### productForm.html
 Lines: 8-9, 13
 
-## inhousePartForm.html
+### inhousePartForm.html
 Lines: 8-9, 11, 32
 ## Task D
-## AboutScreenController
+### AboutScreenController
 Lines: 1-13
-## aboutscreen.html
+### aboutscreen.html
 Lines: 1-43
-## demo.css
+### demo.css
 Lines: 127-153
 
 ## TASK E
-## BootStrapData
+### BootStrapData
 Lines: 45-126
 
-## application.properties
+### application.properties
 Lines: 6
 
 ## TASK F
-## AddProductController
+### AddProductController
 Lines: 176-201
-## mainscreen.html
+### mainscreen.html
 Lines: 98
-## failure.html
+### failure.html
 Lines: 1-19
-## success.html
+### success.html
 Lines: 1-19
 
 ## TASK G
