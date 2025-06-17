@@ -62,7 +62,22 @@ Lines: 18-19, 21-23, 25-26, 29-37, 40-47,
 Lines: 19-20, 22-23, 26-27, 30-38, 41-48
 
 ## TASK H
---CHANGE ME
+### PART
+Lines: 26-28
+### ValidMin
+Lines: 1-18
+### MinValidator
+Lines: 1-26
+### MaxValidator
+Lines: 1-25
+### ValidMax
+Lines: 1-18
+### EnufPartsValidator
+Lines: 36-39, 43
+### InventoryValidator
+Lines: 30-31, 36-37
+### application.properties
+Lines: 6
 
 ## TASK I 
 --CHANGE ME

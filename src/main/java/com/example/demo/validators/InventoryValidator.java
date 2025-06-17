@@ -27,12 +27,14 @@ public class InventoryValidator implements ConstraintValidator<ValidInventory, P
         //Create code to make sure inventory is between mix and max value
         if (part.getInv() > part.getMaxInv()){
             //display error message when inventory is greater than the max inventory
-            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory it is greater than the max inventory").addConstraintViolation();
+            constraintValidatorContext.disableDefaultConstraintViolation();
+            constraintValidatorContext.buildConstraintViolationWithTemplate("Too much inventory for part: " + part.getName()).addConstraintViolation();
             return false;
         }
         else if (part.getInv() < part.getMinInv()){
             //display error message when inventory is greater than the max inventory
-            constraintValidatorContext.buildConstraintViolationWithTemplate("Solution: Fix your inventory it is less than the min inventory").addConstraintViolation();
+            constraintValidatorContext.disableDefaultConstraintViolation();
+            constraintValidatorContext.buildConstraintViolationWithTemplate("Insufficient inventory for part: " + part.getName()).addConstraintViolation();
             return false;
         }
         else {
