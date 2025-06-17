@@ -84,4 +84,5 @@ Lines: 6
 Lines: 159-194
 
 ## TASK J
---CHANGE ME
+### Deleted:
+DeletePartValidator.java & ValidDeletePart.java
