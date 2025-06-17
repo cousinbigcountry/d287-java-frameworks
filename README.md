@@ -22,7 +22,11 @@ Lines: 1-43
 Lines: 127-153
 
 ## TASK E
---CHANGE ME
+## BootStrapData
+Lines: 45-126
+
+## application.properties
+Lines: 6
 
 ## TASK F
 --CHANGE ME

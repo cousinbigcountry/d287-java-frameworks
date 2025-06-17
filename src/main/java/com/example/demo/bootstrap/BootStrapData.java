@@ -1,8 +1,10 @@
 package com.example.demo.bootstrap;
 
+import com.example.demo.domain.InhousePart;
 import com.example.demo.domain.OutsourcedPart;
 import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
+import com.example.demo.repositories.InhousePartRepository;
 import com.example.demo.repositories.OutsourcedPartRepository;
 import com.example.demo.repositories.PartRepository;
 import com.example.demo.repositories.ProductRepository;
@@ -29,15 +31,99 @@ public class BootStrapData implements CommandLineRunner {
     private final ProductRepository productRepository;
 
     private final OutsourcedPartRepository outsourcedPartRepository;
+    private final InhousePartRepository inhousePartRepository;
 
-    public BootStrapData(PartRepository partRepository, ProductRepository productRepository, OutsourcedPartRepository outsourcedPartRepository) {
+    public BootStrapData(PartRepository partRepository, ProductRepository productRepository, OutsourcedPartRepository outsourcedPartRepository, InhousePartRepository inhousePartRepository) {
         this.partRepository = partRepository;
         this.productRepository = productRepository;
         this.outsourcedPartRepository=outsourcedPartRepository;
+        this.inhousePartRepository = inhousePartRepository;
     }
 
     @Override
     public void run(String... args) throws Exception {
+        if(inhousePartRepository.count() == 0) {
+
+            //Creating object for InhousePart Class
+            InhousePart Chain = new InhousePart();
+
+            //Setting values for Chain
+            Chain.setName("Chain");
+            Chain.setInv(25);
+            Chain.setPrice(10.00);
+            Chain.setId(1001);
+
+            inhousePartRepository.save(Chain);
+
+            //Creating object for InhousePart Class
+            InhousePart Handlebars = new InhousePart();
+
+            //Setting values for Handlebars
+            Handlebars.setName("Handlebars");
+            Handlebars.setInv(25);
+            Handlebars.setPrice(35.00);
+            Handlebars.setId(1002);
+
+            inhousePartRepository.save(Handlebars);
+
+            //Creating object for InhousePart Class
+            InhousePart Wheels = new InhousePart();
+
+            //Setting values for Wheels
+            Wheels.setName("Wheels");
+            Wheels.setInv(50);
+            Wheels.setPrice(45.00);
+            Wheels.setId(1003);
+
+            inhousePartRepository.save(Wheels);
+        }
+
+        if(outsourcedPartRepository.count() == 0) {
+            //Creating object for OutsourcedPart class
+            OutsourcedPart Chassis = new OutsourcedPart();
+
+            //Setting values for Chassis
+            Chassis.setCompanyName("Spartanburg Chassis");
+            Chassis.setName("Chassis");
+            Chassis.setInv(25);
+            Chassis.setPrice(50.00);
+            Chassis.setId(2001);
+
+            outsourcedPartRepository.save(Chassis);
+
+            //Creating object for OutsourcedPart class
+            OutsourcedPart Tires = new OutsourcedPart();
+
+            //Setting values for Tires
+            Tires.setCompanyName("Duncan Tires");
+            Tires.setName("Tire");
+            Tires.setInv(50);
+            Tires.setPrice(50.00);
+            Tires.setId(2002);
+
+            outsourcedPartRepository.save(Tires);
+        }
+        if(productRepository.count() == 0) {
+            //Creating Race Bike Product
+            Product RaceBicycle = new Product(3001,"Race Bicycle", 1000.00, 10);
+            productRepository.save(RaceBicycle);
+
+            //Creating Mountain Bike Product
+            Product MtnBicycle = new Product(3002,"Mountain Bicycle", 900.00, 10);
+            productRepository.save(MtnBicycle);
+
+            //Creating BMX Bike Product
+            Product BmxBicycle = new Product(3003,"BMX Bicycle", 800.00, 10);
+            productRepository.save(BmxBicycle);
+
+            //Creating Cruiser Bike Product
+            Product CruiserBicycle = new Product(3004,"Cruiser Bicycle", 700.00, 10);
+            productRepository.save(CruiserBicycle);
+
+            //Creating Cruiser Bike Product
+            Product KidsBicycle = new Product(3005,"Kids Bicycle", 500.00, 10);
+            productRepository.save(KidsBicycle);
+        }
 
        /*
         OutsourcedPart o= new OutsourcedPart();
