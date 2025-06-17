@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>Part Form</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Local CSS -->
+    <link href="/css/demo.css" rel="stylesheet">
 </head>
-<body>
+<body class="outsourced-part-form">
 <h1>Outsourced Part Detail</h1>
 
 <form action="#" th:action="@{/showFormAddOutPart}" th:object="${outsourcedpart}" method="POST"}>
@@ -26,7 +28,7 @@
 
 <p><input type="submit" value="Submit" /></p>
 </form>
-<a href="http://localhost:8080/">Link
+<a class="btn-to-mainscreen-outsourced" href="http://localhost:8080/">Link
     to Main Screen</a>
 </body>
 </html>

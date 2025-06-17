@@ -1,0 +1,112 @@
+/* COMPONENT STYLING */
+body {
+    height: 100%;
+    background-color: #fffdd0;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+}
+
+nav {
+    background-color: #FFFDD0;
+    border-bottom: #5c3733 2px solid;
+}
+/* CLASS STYLING */
+nav>.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar-brand {
+    width: 5%;
+    margin-left: 40%;
+}
+.container img {
+   height: 300%;
+   width: 300%;
+}
+.container h1 {
+    color: #5c3733;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #5c3733;
+}
+/* BUTTON STYLING */
+input[type=submit] {
+    background: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+input[type=submit]:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+}
+input[type=button] {
+    background: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+input[type=button]:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+}
+.btn {
+    background: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+.btn:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+    border: #5c3733 2px solid;
+}
+/* OUTSOURCED PART FORM */
+.outsourced-part-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.btn-to-mainscreen-outsourced {
+    text-decoration: none;
+    background: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+.btn-to-mainscreen-outsourced:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+}
+/* PRODUCT FORM */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* INHOUSE PART FORM */
+.inhouse-part-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.btn-to-mainscreen-inhouse {
+    text-decoration: none;
+    background: #5c3733;
+    color: #FFFDD0;
+    border: #5c3733 2px solid;
+}
+.btn-to-mainscreen-inhouse:hover {
+    background: #FFFDD0;
+    color: #5c3733;
+}

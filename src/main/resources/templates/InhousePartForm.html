@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>Part Form</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Local CSS -->
+    <link href="/css/demo.css" rel="stylesheet">
 </head>
-<body>
+<body class="inhouse-part-form">
 <h1>Inhouse Part Detail</h1>
 <form action="#" th:action="@{/showFormAddInPart}" th:object="${inhousepart}" method="POST"}>
 
@@ -27,7 +29,7 @@
 </form>
 <p><errors path="price" cssClass=""error/><p>
 
-<a href="http://localhost:8080/">Link
+<a class="btn-to-mainscreen-inhouse" href="http://localhost:8080/">Link
     to Main Screen</a>
 </body>
 </html>
