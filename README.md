@@ -29,7 +29,14 @@ Lines: 45-126
 Lines: 6
 
 ## TASK F
---CHANGE ME
+## AddProductController
+Lines: 176-201
+## mainscreen.html
+Lines: 98
+## failure.html
+Lines: 1-19
+## success.html
+Lines: 1-19
 
 ## TASK G
 --CHANGE ME

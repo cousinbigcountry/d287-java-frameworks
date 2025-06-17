@@ -173,4 +173,30 @@ public class AddProductController {
         theModel.addAttribute("availparts",availParts);
         return "productForm";
     }
+
+    @GetMapping("/buyProduct")
+    public String buyProduct(@RequestParam("productID") int theId, Model theModel) {
+        //Initializing productService bean through spring context
+        ProductService productService = context.getBean(ProductServiceImpl.class);
+        //create a product called product2
+        Product product2 = productService.findById(theId);
+        //Creating a variable to store the value of inventory
+        int inv = product2.getInv();
+        //Checking to see if inv value is 0
+        if(inv == 0) {
+            //Returning failure.html page
+            return "failure";
+        }
+        else {
+            //Reduce inventory value by 1
+            inv = inv - 1;
+            //Set new value of product inventory
+            product2.setInv(inv);
+            //Save product object with new inventory value
+            productService.save(product2);
+            //Returning success.html page
+            return "success";
+        }
+
+    }
 }
